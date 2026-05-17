@@ -21,11 +21,14 @@
         </div>
         SGR Portal
       </a>
+      <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
       <div class="nav-links">
-        <a class="nav-link active" data-route="/" href="#/">Home</a>
-        <a class="nav-link" data-route="/submit" href="#/submit">Submit</a>
-        <a class="nav-link" data-route="/track" href="#/track">Track</a>
-        <a class="nav-link" data-route="/admin/login" href="#/admin/login">Admin</a>
+        <a class="nav-link active" data-route="/" href="#/" onclick="closeMobileMenu()">Home</a>
+        <a class="nav-link" data-route="/submit" href="#/submit" onclick="closeMobileMenu()">Submit</a>
+        <a class="nav-link" data-route="/track" href="#/track" onclick="closeMobileMenu()">Track</a>
+        <a class="nav-link" data-route="/admin/login" href="#/admin/login" onclick="closeMobileMenu()">Admin</a>
       </div>
     </div>
   </nav>

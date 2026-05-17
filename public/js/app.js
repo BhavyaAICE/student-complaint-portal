@@ -31,6 +31,12 @@ function updateNav(hash) {
   document.querySelectorAll('.nav-link').forEach(l => {
     l.classList.toggle('active', l.dataset.route === hash);
   });
+  closeMobileMenu();
+}
+
+function closeMobileMenu() {
+  const nav = document.querySelector('.nav-links');
+  if (nav) nav.classList.remove('open');
 }
 
 // ==================== TOAST ====================
