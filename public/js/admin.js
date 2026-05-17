@@ -3,7 +3,6 @@ function renderAdminLogin(app) {
   app.innerHTML = `
     <div class="admin-login page active">
       <div class="login-card">
-        <div class="login-icon">${icon('shield',28)}</div>
         <h1>Admin Portal</h1>
         <p class="subtitle">Sign in to manage student grievances</p>
         <div class="login-error" id="login-error"></div>
